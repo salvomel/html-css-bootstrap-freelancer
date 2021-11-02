@@ -35,3 +35,21 @@ header {
 
 /* MAIN */
 
+/* Jumbotron */
+.jumbotron {
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.jumbo-img {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    margin: auto;
+}
+
+.star {
+    margin: 20px;
+}
