@@ -33,6 +33,16 @@ header {
     text-align: right;
 }
 
+/* COMMON */
+.section-title {
+    text-align: center;
+}
+
+.star {
+    margin: 20px;
+    text-align: center;
+}
+
 /* MAIN */
 
 /* Jumbotron */
@@ -50,6 +60,36 @@ header {
     margin: auto;
 }
 
-.star {
-    margin: 20px;
+/* Section Portfolio */
+.portfolio {
+    margin: 30px 0;
+}
+
+.single-img {
+    height: 200px;
+    width: auto;
+    background-color: blue;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Section About */
+.about {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.about-container {
+    width: 70%;
+    margin: auto;
+}
+
+.download-btn {
+    text-align: center;
+}
+
+.download-btn a {
+    color: white;
+    border: 1px solid white;
+    text-decoration: none
 }
