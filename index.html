@@ -13,43 +13,45 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- Header col left -->
-                <div class="col-8 col-md-6">
-                    <div class="brand-name">
-                        START BOOTSTRAP
+        <nav>
+            <div class="container">
+                <div class="row align-items-center">
+    
+                    <!-- Header col left -->
+                    <div class="col-8 col-md-6">
+                        <div class="brand-name">
+                            START BOOTSTRAP
+                        </div>
                     </div>
+    
+                    <!-- Header col right -->
+                    <div class="col-4 col-md-6">
+                        <div class="menu-container">
+    
+                            <!-- Menu desktop -->
+                            <div class="menu d-none d-md-block">
+                                <ul>
+                                    <li>
+                                        <a href="#">PORTFOLIO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ABOUT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Burger toggle -->
+                            <div class="burger d-md-none">
+                                 <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-
-                <!-- Header col right -->
-                <div class="col-4 col-md-6">
-                    <div class="menu-container">
-
-                        <!-- Menu desktop -->
-                        <div class="menu d-none d-md-block">
-                            <ul>
-                                <li>
-                                    <a href="#">PORTFOLIO</a>
-                                </li>
-                                <li>
-                                    <a href="#">ABOUT</a>
-                                </li>
-                                <li>
-                                    <a href="#">CONTACT</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Burger toggle -->
-                        <div class="burger d-md-none">
-                             <i class="fas fa-bars"></i>
-                        </div>
-                    </div>
-                </div> 
             </div>
-        </div>
+        </nav>
     </header>
     <!-- END HEADER -->
 
@@ -57,30 +59,35 @@
     <main>
 
         <!-- Jumbotron -->
-        <section>
+        <section class="green-back">
+
             <div class="jumbotron">
 
-                <div class="jumbo-img"></div>
+                <div class="container">
 
-                <h1>START BOOTSTRAP</h1>
+                    <div class="jumbo-img"></div>
 
-                <div class="star">Stellina</div>
-                
-                <div class="jumbo-description">
-                    LOREM-LOREM-LOREM
+                    <h1>START BOOTSTRAP</h1>
+    
+                    <div class="star">Stellina</div>
+                    
+                    <div class="jumbo-description">
+                        LOREM-LOREM-LOREM
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section Portfolio-->
-        <section class="portfolio">
+        <section>
 
             <div class="container">
                 
-                <h2 class="section-title">PORTFOLIO</h2>
-
-                <div class="star">Stellina</div>
-
+                <div class="section-title">
+                    <h2>PORTFOLIO</h2>
+                    <div class="star">Stellina</div>
+                </div>
+            
                 <!-- Images -->
                 <div class="portfolio-images">
                     
@@ -109,26 +116,29 @@
         </section>
 
         <!-- Section About -->
-        <section class="about">
+        <section class="green-back">
 
             <div class="about-container">
 
                 <div class="container-fluid">
 
-                    <h2 class="section-title">ABOUT</h2>
-
-                    <div class="star">Stellina</div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <p class="about-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis velit? Omnis voluptates explicabo id modi quaerat repellendus voluptatibus, harum architecto laboriosam provident? Consectetur dolor esse magnam saepe totam reiciendis.</p>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <p class="about-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis velit? Omnis voluptates explicabo id modi quaerat repellendus voluptatibus, harum architecto laboriosam provident? Consectetur dolor esse magnam saepe totam reiciendis.</p>
-                        </div>
+                    <div class="section-title">
+                        <h2>ABOUT</h2>
+                        <div class="star">Stellina</div>
                     </div>
 
+                    <div class="about-content">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <p class="about-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis velit? Omnis voluptates explicabo id modi quaerat repellendus voluptatibus, harum architecto laboriosam provident? Consectetur dolor esse magnam saepe totam reiciendis.</p>
+                            </div>
+    
+                            <div class="col-12 col-md-6">
+                                <p class="about-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis velit? Omnis voluptates explicabo id modi quaerat repellendus voluptatibus, harum architecto laboriosam provident? Consectetur dolor esse magnam saepe totam reiciendis.</p>
+                            </div>
+                        </div>
+                    </div>
+                
                     <div class="download-btn">
                         <a href="#">Download</a>
                     </div>
@@ -137,16 +147,17 @@
         </section>
 
         <!-- Section Contact Me -->
-        <section class="contact-me">
+        <section>
 
             <div class="contact-container">
 
                 <div class="container-fluid">
 
-                    <h2 class="section-title">CONTACT ME</h2>
-
-                    <div class="star">Stellina</div>
-
+                    <div class="section-title">
+                        <h2 class="section-title">CONTACT ME</h2>
+                        <div class="star">Stellina</div>
+                    </div>
+                   
                     <div class="contact-form">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, odio natus repellat dolorum labore earum perferendis nostrum similique aliquid facilis quasi saepe explicabo sed maiores quisquam, unde obcaecati ratione vero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur voluptatum incidunt autem quasi corrupti repudiandae asperiores ipsa eum dolore voluptate veniam eligendi voluptatem, quod quas atque saepe blanditiis quo esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda quae fuga voluptatem id, dicta earum voluptatum nihil asperiores eligendi molestiae molestias consequuntur facilis at eos, perferendis velit nostrum quaerat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptas, laudantium voluptates perspiciatis repellendus veniam et ipsa labore ducimus necessitatibus harum facere distinctio dolorem incidunt odio odit quo. Iusto, placeat!
                     </div>
@@ -158,34 +169,40 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="container">
+        
             
-            <!-- Footer Top -->
-            <div class="footer-top">
+        <!-- Footer Top -->
+        <div class="footer-top">
 
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="footer-section">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis et tenetur deserunt perferendis quae deleniti, fugiat similique obcaecati dolores, a eos, saepe aut. Placeat consequatur suscipit porro et voluptas.
+            <div class="container">
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="footer-section">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis et tenetur deserunt perferendis quae deleniti, fugiat similique obcaecati dolores, a eos, saepe aut. Placeat consequatur suscipit porro et voluptas.
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="footer-section">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis et tenetur deserunt perferendis quae deleniti, fugiat similique obcaecati dolores, a eos, saepe aut. Placeat consequatur suscipit porro et voluptas.
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="footer-section">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis et tenetur deserunt perferendis quae deleniti, fugiat similique obcaecati dolores, a eos, saepe aut. Placeat consequatur suscipit porro et voluptas.
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <div class="footer-section">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis et tenetur deserunt perferendis quae deleniti, fugiat similique obcaecati dolores, a eos, saepe aut. Placeat consequatur suscipit porro et voluptas.
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="footer-section">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis et tenetur deserunt perferendis quae deleniti, fugiat similique obcaecati dolores, a eos, saepe aut. Placeat consequatur suscipit porro et voluptas.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </div>
+        
 
         <!-- Footer Bootom -->
         <div class="footer-bottom">
-            Copyright
+
+            <div class="container">
+                Copyright
+            </div>
         </div>
     </footer>
     <!-- END FOOTER -->

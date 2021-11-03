@@ -5,10 +5,8 @@ header {
     color: white;
 }
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu-container {
+    text-align: right;
 }
 
 .menu li {
@@ -18,7 +16,7 @@ header {
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: inherit;
     font-weight: bold;
 }
 
@@ -28,29 +26,32 @@ header {
     font-weight: bold;
 }
 
-.burger,
-.menu {
-    text-align: right;
-}
-
 /* COMMON */
-.section-title {
-    text-align: center;
+header ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.star {
-    margin: 20px;
-    text-align: center;
+.green-back {
+    background-color: #1abc9c;
+    color: white;
 }
 
 /* MAIN */
+section {
+    padding: 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 /* Jumbotron */
 .jumbotron {
-    background-color: #1abc9c;
-    color: white;
     text-align: center;
-    padding: 30px;
 }
 
 .jumbo-img {
@@ -61,10 +62,6 @@ header {
 }
 
 /* Section Portfolio */
-.portfolio {
-    padding: 30px 0;
-}
-
 .single-img {
     height: 200px;
     width: auto;
@@ -74,15 +71,14 @@ header {
 }
 
 /* Section About */
-.about {
-    background-color: #1abc9c;
-    color: white;
-}
-
 .about-container {
     width: 70%;
     margin: auto;
-    padding: 30px 0;
+    max-width: 1000px;
+}
+
+.about-par {
+    margin-bottom: 20px;
 }
 
 .download-btn {
@@ -99,17 +95,17 @@ header {
 .contact-container {
     width: 65%;
     margin: auto;
-    padding: 30px 0;
+    max-width: 1000px;
 }
 
 /* FOOTER */
 footer {
-    background-color: #3a546d;
     color: white;
 }
 
 .footer-top {
-    padding: 30px 0;
+    background-color: #3a546d;
+    padding: 30px;
 }
 
 .footer-section {
