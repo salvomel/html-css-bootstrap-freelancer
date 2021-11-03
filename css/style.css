@@ -22,8 +22,15 @@ header {
 
 .brand-name,
 .burger {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+    .brand-name {
+        font-size: 25px;
+    }
 }
 
 /* COMMON */
@@ -41,7 +48,7 @@ footer ul {
 
 /* MAIN */
 section {
-    padding: 30px;
+    padding: 50px;
 }
 
 .section-title {
@@ -49,16 +56,75 @@ section {
     margin-bottom: 20px;
 }
 
+.star-container {
+    display: flex;
+    justify-content: center;
+}
+
+.star-white,
+.star-black {
+    font-size: 25px;
+}
+
+.star-white::before,
+.star-white::after {
+    display: inline-block;
+	content: '';
+	width: 80px;
+	height: 3px;
+	background-color: white;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.star-black::before,
+.star-black::after {
+    display: inline-block;
+	content: '';
+	width: 80px;
+	height: 3px;
+	background-color: black;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
 /* Jumbotron */
 .jumbotron {
     text-align: center;
 }
 
-.jumbo-img {
-    height: 150px;
-    width: 150px;
-    background-color: blue;
-    margin: auto;
+.jumbo-img img {
+    height: 250px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+}
+
+.jumbo-description {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) { 
+
+    .jumbotron h1 {
+        font-size: 60px;
+    }
+
+    .jumbo-description {
+        font-size: 25px;
+    }
+
+    .star-black::before,
+    .star-black::after,
+    .star-white::before,
+    .star-white::after { 
+        width: 150px;
+        margin: 0 25px;
+    }
 }
 
 /* Section Portfolio */
