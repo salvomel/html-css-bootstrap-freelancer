@@ -150,7 +150,7 @@ section {
 
 /* Section About */
 .about-par {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 20px;
 }
 
@@ -165,10 +165,28 @@ section {
 }
 
 /* Section Contact Me */
-.contact-container {
-    width: 65%;
-    margin: auto;
-    max-width: 1000px;
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control  {
+    padding: 0;
+}
+
+.btn-green {
+    background-color: #1abc9c;
+    color: white;
+    font-size: 18px;
 }
 
 /* FOOTER */
