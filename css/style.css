@@ -95,7 +95,6 @@ section {
 
 .jumbo-img img {
     height: 250px;
-    max-width: 100%;
     margin-bottom: 20px;
 }
 
@@ -129,11 +128,18 @@ section {
 
 /* Section Portfolio */
 .single-img {
-    height: 200px;
-    width: auto;
-    background-color: blue;
     margin-bottom: 20px;
+}
+
+.single-img img {
     border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .section-title h2 {
+        font-size: 50px;
+    }
 }
 
 /* Section About */
