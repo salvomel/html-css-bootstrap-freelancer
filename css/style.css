@@ -52,6 +52,27 @@ footer ul {
     max-width: 1000px;
 }
 
+/* Star */
+.star {
+    font-size: 25px;
+}
+
+.star::before,
+.star::after {
+    display: inline-block;
+	content: '';
+	width: 80px;
+	height: 4px;
+	background-color: black;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.green-back .star::before,
+.green-back .star::after {
+	background-color: white;
+}
+
 /* MAIN */
 section {
     padding: 50px;
@@ -60,38 +81,6 @@ section {
 .section-title {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.star-container {
-    display: flex;
-    justify-content: center;
-}
-
-.star-white,
-.star-black {
-    font-size: 25px;
-}
-
-.star-white::before,
-.star-white::after {
-    display: inline-block;
-	content: '';
-	width: 80px;
-	height: 4px;
-	background-color: white;
-    vertical-align: middle;
-    margin: 0 10px;
-}
-
-.star-black::before,
-.star-black::after {
-    display: inline-block;
-	content: '';
-	width: 80px;
-	height: 4px;
-	background-color: black;
-    vertical-align: middle;
-    margin: 0 10px;
 }
 
 /* Jumbotron */
@@ -123,10 +112,8 @@ section {
         font-size: 25px;
     }
 
-    .star-black::before,
-    .star-black::after,
-    .star-white::before,
-    .star-white::after { 
+    .star::before,
+    .star::after { 
         width: 150px;
         margin: 0 25px;
     }
@@ -158,12 +145,6 @@ section {
     text-align: center;
 }
 
-.btn-white {
-    color: white;
-    border: 1px solid white;
-    font-size: 20px;
-}
-
 /* Section Contact Me */
 .form-container input[type="text"],
 .form-container input[type="email"],
@@ -186,7 +167,6 @@ section {
 .btn-green {
     background-color: #1abc9c;
     color: white;
-    font-size: 18px;
 }
 
 /* FOOTER */
@@ -204,7 +184,7 @@ footer {
     text-align: center;
 }
 
-.footer-section p {
+.footer-section address {
     font-size: 20px;
 }
 
@@ -217,9 +197,7 @@ footer {
 .social a {
     text-decoration: none;
     color: inherit;
-}
-
-.social i {
+    display: inline-block;
     border: 1px solid white;
     width: 45px;
     height: 45px;
